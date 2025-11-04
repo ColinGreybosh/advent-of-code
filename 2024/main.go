@@ -4,6 +4,7 @@ import (
 	Day01 "advent-of-code-2024/solutions/day01"
 	Day02 "advent-of-code-2024/solutions/day02"
 	Day03 "advent-of-code-2024/solutions/day03"
+	Day04 "advent-of-code-2024/solutions/day04"
 	"fmt"
 )
 
@@ -30,5 +31,13 @@ func main() {
 		fmt.Println(err)
 	} else {
 		fmt.Println(answer3)
+	}
+
+	fmt.Println("\n====== DAY 04 ======")
+	answer4, err := Day04.Solution("inputs/day04.txt")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(answer4)
 	}
 }
