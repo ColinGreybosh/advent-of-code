@@ -49,7 +49,7 @@ func countCrosses(wordSearch WordSearch, word []rune) int64 {
 			}
 			if !(isWordInDirection(wordSearch, word, i+len(word)-1, j, SOUTH_WEST) || isWordInDirection(wordSearch, drow, i+len(word)-1, j, SOUTH_WEST)) {
 				// Moved over to the top right corner of the square
-				// Did not find our work across the south west diagonal (neither forwards nor reversed)
+				// Did not find our word across the south west diagonal (neither forwards nor reversed)
 				continue
 			}
 			count++
